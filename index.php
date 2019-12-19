@@ -123,6 +123,7 @@ href="#sportswear">
 <h2 class="title text-center">New Items</h2>
 		<?php 
 $cosmetics=mysqli_query($connection,"select product_id, product_name, image, price, c_price from products  where product_type like '%dress%' order by rand() ,time Desc LIMIT 0,12")or die("Query 1 is inncorrect..........");
+$shoes=mysqli_query($connection,"select product_id, product_name, image, price, c_price from products  where product_type like '%Shoes%' order by rand() ,time Desc LIMIT 0,12")or die("Query 1 is inncorrect..........");
 while(list($product_id,$product_name,$image,$price,$c_price)=mysqli_fetch_array($cosmetics))
 {
 echo"

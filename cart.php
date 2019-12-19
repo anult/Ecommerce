@@ -140,7 +140,7 @@ while($row=mysqli_fetch_array($results)){
 	echo "
 	<td class='cart_product' style='margin-right:40px'><a href='#'>
 	<img src='images/products/$image' style='width:80px; height:80px; border:outset #000'></a></td>
-	td class='cart_description'>
+	<td class='cart_description'>
 	<h4><a >$product_name</a></h4>
 	<p>$details</p>
 	</td>
